@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFlow | A rede social onde projetos evoluem</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: "#050816", secondary: "#0f172a", card: "rgba(17, 24, 39, 0.7)",
+                        neonBlue: "#3b82f6", neonPurple: "#8b5cf6", success: "#22c55e",
+                        error: "#ef4444", warning: "#facc15", textMain: "#f8fafc", textMuted: "#94a3b8"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- React e Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- 🚀 SUPABASE (ISSO RESOLVE O ERRO) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background text-textMain antialiased min-h-screen overflow-x-hidden">
+    
+    <div id="root"></div>
+
+    <!-- O seu script.js DEVE ficar aqui no final -->
+    <script type="text/babel" src="script.js"></script>
+</body>
+</html>
